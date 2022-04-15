@@ -128,3 +128,7 @@ public class ManagerEierfaerben : MonoBehaviour
         dynOrderDoneWhite.text = doneWhite + "/" + orderWhite;
     }
 }
+
+
+
+
