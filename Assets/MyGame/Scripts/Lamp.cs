@@ -3,22 +3,22 @@ using UnityEngine.UI;
 
 public class Lamp : MonoBehaviour
 {
-    public bool lampOn = false;
+    public bool lampOff = false;
     private bool lampStateSwitched = false;
 
     public Color myColor;
     
     void Start()
     {
-        if (!lampOn)
+        if (!lampOff)
         {
-            GetComponent<Image>().color = Color.black;
+            GetComponent<Image>().color = Color.white;
         }
     }
 
-    public bool isOn()
+    public bool isOff()
     {
-        return lampOn;
+        return lampOff;
     }
 
     void Update()
@@ -27,19 +27,19 @@ public class Lamp : MonoBehaviour
         {
             lampStateSwitched = false;
 
-            GetComponent<Image>().color = lampOn ? myColor : Color.black; 
+            GetComponent<Image>().color = lampOff ? myColor : Color.white; 
         }
     }
 
     public void SwitchOnOffState()
     {
-        lampOn = !lampOn;
+        lampOff = !lampOff;
         lampStateSwitched = true;
     }
 
-    public void SwitchOn(bool onOff)
+    public void SwitchOff(bool onOff)
     {
-        lampOn = onOff;
+        lampOff = onOff;
         lampStateSwitched = true;
     }
 }

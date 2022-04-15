@@ -15,7 +15,7 @@ public class Ei : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name.Contains("Lamp") && collision.GetComponent<Lamp>().isOn())
+        if (collision.name.Contains("Lamp") && collision.GetComponent<Lamp>().isOff())
         {
             if (collision.name == "LampBlue")
             {
