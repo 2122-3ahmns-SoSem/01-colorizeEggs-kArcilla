@@ -27,7 +27,7 @@ public class ManagerEierfaerben : MonoBehaviour
     public int orderGreen, doneGreen;
     public int orderWhite, doneWhite;
 
-    private int maxOrderEggs = 12;
+    private int maxOrderEggs = 20;
     private Ei[] eggs;
     
     private int releaseIndex = 0;
@@ -41,7 +41,11 @@ public class ManagerEierfaerben : MonoBehaviour
 
     private void Update()
     {
-        if(eggs[maxOrderEggs-1].inBasket)
+        SetRedDoneValue();
+        SetBlueDoneValue();
+        SetGreenDoneValue();
+        SetWhiteDoneValue();
+        if (eggs[maxOrderEggs-1].inBasket)
         {
             overlay.gameObject.SetActive(true);
 
@@ -52,7 +56,7 @@ public class ManagerEierfaerben : MonoBehaviour
             }
             else
             {
-                doneMsg.text = "Ojeee, Bestellungen leider nicht erledigt!!";
+                doneMsg.text = "Ojeee, Bestellungen diesesmal leider nicht erledigt";
             }
 
         }

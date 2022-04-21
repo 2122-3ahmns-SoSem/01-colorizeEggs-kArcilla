@@ -3250,8 +3250,8 @@ MonoBehaviour:
   dynOrderDoneWhite: {fileID: 510369202}
   parentEggs: {fileID: 2017973305}
   prefabEgg: {fileID: 707712361395753380, guid: e55a705fe6780dd4ab7f6bbe1b311272, type: 3}
-  doneMsg: {fileID: 0}
-  overlay: {fileID: 0}
+  doneMsg: {fileID: 801618255}
+  overlay: {fileID: 1796908305}
   orderRed: 0
   doneRed: 0
   orderBlue: 0
